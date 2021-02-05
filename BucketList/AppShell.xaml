@@ -30,10 +30,10 @@
     </Shell.Resources>
 
     <!-- Your Pages -->
-    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <Tab Title="Browse" Icon="tab_feed.png">
+    <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Title="Bucket List">
+        <Tab Title="List" Icon="tab_feed.png">
             <local:ItemsPage />
-            <!-- Add NewItemPage element here -->
+            <local:NewItemPage />
         </Tab>
         <ShellContent ContentTemplate="{DataTemplate local:MissionPage}" Title="Mission"/>
     </FlyoutItem>
