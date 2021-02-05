@@ -36,20 +36,20 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Padding="10">
-                            <!-- Add CheckBox element here -->
-                            <!-- Add StackLayout element here -->
-                            <Label Text="{Binding Text}" 
+                        <StackLayout Orientation="Horizontal" Padding="10">
+                            <CheckBox IsChecked="{Binding IsCompleted}" Margin="10,0,0,0"/>
+                            <StackLayout>
+                                <Label Text="{Binding Text}" 
                                     d:Text="{Binding .}"
                                     LineBreakMode="NoWrap" 
                                     Style="{DynamicResource ListItemTextStyle}" 
                                     FontSize="16" />
-                            <Label Text="{Binding Description}" 
+                                <Label Text="{Binding Description}" 
                                     d:Text="Item description"
                                     LineBreakMode="NoWrap"
                                     Style="{DynamicResource ListItemDetailTextStyle}"
                                     FontSize="13" />
-                            <!-- Add closing StackLayout here -->
+                            </StackLayout>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
